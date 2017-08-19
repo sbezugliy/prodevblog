@@ -1,0 +1,33 @@
+<h2>Show part</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @part.name %>
+  </li>
+
+  <li>
+    <strong>Short link:</strong>
+    <%= @part.short_link %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @part.content %>
+  </li>
+
+  <li>
+    <strong>Published:</strong>
+    <%= @part.published %>
+  </li>
+
+  <li>
+    <strong>Author:</strong>
+    <%= @part.author_id %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: part_path(@conn, :edit, @part) %>
+<%= link "Back", to: part_path(@conn, :index) %>

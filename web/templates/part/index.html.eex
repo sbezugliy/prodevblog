@@ -1,0 +1,34 @@
+<h2>Listing parts</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Short link</th>
+      <th>Content</th>
+      <th>Published</th>
+      <th>Author</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for part <- @parts do %>
+    <tr>
+      <td><%= part.name %></td>
+      <td><%= part.short_link %></td>
+      <td><%= part.content %></td>
+      <td><%= part.published %></td>
+      <td><%= part.author_id %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: part_path(@conn, :show, part), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: part_path(@conn, :edit, part), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: part_path(@conn, :delete, part), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New part", to: part_path(@conn, :new) %>

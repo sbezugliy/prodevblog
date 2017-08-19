@@ -1,0 +1,60 @@
+<%= form_for @changeset, user_path(@conn, :update, @user), fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <h2>User</h2>
+
+  <%= label f, :name, class: "control-label" do %>
+    Name
+    <%= text_input f, :name, class: "form-control" %>
+    <%= error_tag f, :name %>
+  <% end %>
+
+  <%= label f, :email, class: "control-label" do %>
+    Email
+    <%= text_input f, :email, class: "form-control" %>
+    <%= error_tag f, :email %>
+  <% end %>
+  <%= submit "Submit", class: "button" %>
+<% end %>
+
+  <h3>Roles</h3>
+
+<div class="grid-x">
+
+  <div class="large-6 cell">
+    <a href="#" class="button"  data-toggle="rolesModal"><i class="fi-plus large"></i> Add</a>
+  </div>
+</div>
+<div class="grid-x">
+  <div class="large-6 cell">
+    <table>
+      <%= for role <- @user.roles do %>
+        <tr>
+          <td><%= role.name %></td>
+          <td><%= link(to: user_path(@conn, :delete_ur, @user, role.id), method: :delete, data: [confirm: "Are you sure?"]) do %>
+            <i class="fi-x large"></i>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+<div class="tiny reveal" id="rolesModal" data-reveal>
+  <p>Choose new role</p>
+  <%= for role <- @roles do %>
+  <div>
+    <%= form_for @ur_changeset, user_path(@conn, :insert_ur, @user), fn fur -> %>
+      <%= hidden_input fur, :role_id, value: role.id %>
+      <%= submit role.name, class: "button" %>
+    <% end %>
+  </div>
+  <% end %>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

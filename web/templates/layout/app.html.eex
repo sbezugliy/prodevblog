@@ -1,0 +1,19 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <%= render "head.html", conn: @conn %>
+
+    <body data-js-view-name="<%= js_view_name(@conn, @view_template) %>">
+      <div class="off-canvas-wrapper">
+        <%= render "navigation.html", conn: @conn, current_user: @current_user %>
+        <div class="off-canvas-content main-content row expanded" data-off-canvas-content>
+          <div class="row content">
+            <%= render "alerts.html", conn: @conn %>
+            <%= render @view_module, @view_template, assigns %>
+          </div>
+        </div>
+      </div>
+
+      <%= render "script.html", conn: @conn, view_module: @view_module, current_user: @current_user %>
+
+    </body>
+  </html>

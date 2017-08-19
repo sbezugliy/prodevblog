@@ -1,0 +1,39 @@
+<h2>Listing roles</h2>
+
+<div class="table-scroll">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Is admin</th>
+
+        <th colspan="3">Manage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for role <- @roles do %>
+          <tr>
+            <td><%= role.name %></td>
+            <td><%= role.is_admin %></td>
+
+            <td>
+              <%= link(to: role_path(@conn, :show, role), class: "button") do %>
+                <i class="fi-layout large"></i> Show
+              <% end %>
+            </td>
+            <td>
+              <%= link(to: role_path(@conn, :edit, role), class: "button") do %>
+                <i class="fi-pencil large"></i> Edit
+              <% end %>
+            </td>
+            <td>
+              <%= link(to: role_path(@conn, :delete, role), method: :delete, data: [confirm: "Are you sure?"], class: "button") do %>
+                <i class="fi-x large"></i> Delete
+              <% end %>
+            </td>
+          </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<%= link "New role", to: role_path(@conn, :new) %>

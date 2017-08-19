@@ -1,0 +1,41 @@
+
+<div class="grid-x grid-margin-x">
+  <div class="large-4 cell"></div>
+  <div class="small-12 large-4 cell">
+    <h3>
+      <%= if @current_user do %>
+        Connect your account to
+      <% else %>
+        Login with
+      <% end %>
+    </h3>
+    <hr></hr>
+
+    <%= if not Enum.member?(@current_auths, "identity") do %>
+
+      <%= form_tag auth_path(@conn, :callback, "identity"), method: "post", class: "login", novalidate: true do %>
+        <label class="c-label">
+          Email address
+          <input type="email" class="c-input" name="email" value='<%= @conn.params["email"] %>' pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+        </label>
+
+        <label class="c-label">
+          Password
+          <input type='password' class="c-input" name="password">
+        </label>
+
+        <button class="button">Login</button>
+      <% end %>
+    <% end %>
+
+    <%= if !@current_user do %>
+      <p class="u-font-center u-mar-top-m"><%= link "Sign up with your email", to: signup_path(@conn, :new), class: "button" %></p>
+    <% end %>
+    <hr></hr>
+    <p>Login or signup using:</p>
+    <%= if not Enum.member?(@current_auths, "google") do %>
+      <a href="<%= auth_path(@conn, :login, "google") %>" class="google"><i class="fi-social-google-plus large"></i> Google</a>
+    <% end %>
+  </div>
+  <div class="large-4 cell"></div>
+</div>

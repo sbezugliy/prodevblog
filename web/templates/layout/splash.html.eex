@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render "head.html", conn: @conn %>
+  <body>
+    <%= render "navigation.html", conn: @conn, current_user: @current_user %>
+    <div class="off-canvas-content main-content row expanded" data-off-canvas-content>
+
+        <div class="row content">
+          <%= render "alerts.html", conn: @conn %>
+          <%= render @view_module, @view_template, assigns %>
+        </div>
+
+      <footer class="grid-x">
+        <div class="small-12 medium-12 large-4 cell">
+          <div class="icon">
+            <i class="fi-like large top-icon"></i>
+          </div>
+          <h2>What Powers This site</h2>
+          <p>
+            This site is powered by <a href="http://elixir-lang.org">Elixir</a>, <a href="http://phoenixframework.org">Phoenix Framework</a>  and <a href="http://foundation.zurb.com/">Zurb Foundation 6</a>!
+          </p>
+        </div>
+        <div class="small-12 medium-12 large-4 cell">
+          <div class="icon">
+            <i class="fi-comments large top-icon"></i>
+          </div>
+          <h2>Footer column 2</h2>
+          <p>
+              Footer column 2
+          </p>
+        </div>
+        <div class="small-12 medium-12 large-4 cell">
+          <div class="icon">
+            <i class="fi-pencil large top-icon"></i>
+          </div>
+          <h2>Footer column 3</h2>
+          <p>
+            Footer column 3
+          <p>
+        </div>
+      </footer>
+
+      <section class="more-info expanded row">
+        <div class="social-media text-center">
+          <a href="#" class="fi-social-google-plus large"></a>
+          <a href="#" class="fi-social-facebook large"></a>
+          <a href="#" class="fi-social-twitter large"></a>
+          <a href="#" class="fi-social-github large"></a>
+          <a href="#" class="fi-social-instagram large"></a>
+        </div>
+      </section>
+
+      <footer class="expanded row">
+        Sergey Bezugliy <br/>
+        &#169; Copyright 2017. All rights reserved.
+      </footer>
+    </div>
+
+    <%= render "script.html", conn: @conn %>
+  </body>
+</html>

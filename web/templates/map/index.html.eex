@@ -1,0 +1,29 @@
+<h3>My Google Maps Demo</h3>
+<div class="grid-x grid-margin-x">
+  <div class="cell">
+    <div id="google-map"></div>
+  </div>
+</div>
+
+<script>
+function initMap() {
+ var mapCenter = {lat: <%= @map.src_lat %>, lng:<%= @map.src_long %>}
+ // Generate map
+  enhancedMap = new google.maps.Map(document.getElementById('google-map'), {
+    center: mapCenter,
+    zoom: <%= @map.zoom %>,
+    scrollwheel: true,
+    styles: [{
+      featureType: 'poi.business',
+      elementType: 'labels',
+      stylers: [{
+        visibility: 'off'
+      }]
+    }]
+  });
+  infowindow = new google.maps.InfoWindow();
+}
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo4Y2q3GO6_gO-XmE8eqjdO1aah_2RbB0&callback=initMap">
+</script>

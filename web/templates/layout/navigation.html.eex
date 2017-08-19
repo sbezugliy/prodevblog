@@ -1,0 +1,52 @@
+<div class="title-bar">
+  <div class="title-bar-left">
+    <button class="menu-icon" type="button" data-open="left-offcanvas-menu"></button>
+  </div>
+</div>
+
+<div class="off-canvas position-left" id="left-offcanvas-menu" data-off-canvas  data-transition="push">
+  <h1 class="text-center">DevElixir</h1>
+  <ul class="submenu menu vertical">
+    <%= if @current_user do %>
+      <li>
+        <hr>
+      </li>
+      <li class="text-center">
+        <%= @current_user.email %>
+      </li>
+      <li>
+        <hr>
+      </li>
+      <li>
+        <%= link(to: page_path(@conn, :index)) do %>
+          <i class="fi-home large"></i> DevElixir
+        <% end %>
+      </li>
+      <li>
+        <%= link(to: part_path(@conn, :index)) do %>
+          <i class="fi-map large"></i> Pages
+        <% end %>
+      </li>
+      <li>
+        <%= link(to: map_path(@conn, :places)) do %>
+          <i class="fi-marker large"></i> Places
+        <% end %>
+      </li>
+      <li>
+        <%= link(to: auth_path(@conn, :logout), method: :delete, data: [confirm: "Are you sure?"]) do %>
+        <i class="fi-power large"></i> Logout
+        <% end %>
+      </li>
+    <% else %>
+      <li>
+        <%= link(to: "/signup") do %>
+          <i class="fi-at-sign large"></i> Signup
+        <% end %>
+      </li>
+      <li>
+        <%= link(to: "/auth/login") do %>
+          <i class="fi-key large"></i> Login
+        <% end %>
+      </li>
+    <% end %>
+</div>

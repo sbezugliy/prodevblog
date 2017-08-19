@@ -1,0 +1,14 @@
+
+module my-euunstrip 1.0;
+
+require {
+	type unlabeled_t;
+	type abrt_t;
+	class file read;
+}
+
+#============= abrt_t ==============
+
+#!!!! The file '/home/sergey/workspace/elixir/emporium/deps/comeonin/priv/bcrypt_nif.so' is mislabeled on your system.  
+#!!!! Fix with $ restorecon -R -v /home/sergey/workspace/elixir/emporium/deps/comeonin/priv/bcrypt_nif.so
+allow abrt_t unlabeled_t:file read;

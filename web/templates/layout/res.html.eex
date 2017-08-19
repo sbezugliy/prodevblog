@@ -1,0 +1,13 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <%= render "head.html", conn: @conn %>
+
+    <body data-js-view-name="<%= js_view_name(@conn, @view_template) %>">
+          <div class="row">
+            <%= render "alerts.html", conn: @conn %>
+            <%= render @view_module, @view_template, assigns %>
+          </div
+
+      <%= render "script.html", conn: @conn, current_user: @current_user %>
+    </body>
+  </html>

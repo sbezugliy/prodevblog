@@ -1,0 +1,310 @@
+
+<div class="grid-x">
+  <div class="large-12 cell res-h text-center">
+    <h3>Sergey Bezugliy</h3>
+  </div>
+  <div class="large-4 cell res">
+
+    <small>
+      Kyivskiy Shlyakh str. 2/4, apt. 104<br/>
+      Boryspil, Kyiv oblast'<br/>
+      08300, Ukraine<br/>
+    </small>
+  </div>
+  <div class="large-4 cell res">
+  </div>
+  <div class="large-4 cell res">
+    <small>
+      E-mail: s.bezugliy@gmail.com<br/>
+      Skype: s.bezugliy<br/>
+      Phone: +380996351625<br/>
+    </small>
+  </div>
+  <div class="large-12 cell res-h">
+    <h4>Professional skills</h4>
+  </div>
+  <div class="large-2 cell res">
+    Programming
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>Elixir, Phoenix framework</li>
+      <li>Ruby, Ruby on Rails</li>
+      <li>JavaScript, HTML, CSS, Bootstrap, Zurb Foundation, Materialize, MDL</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+    Networking
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>TCP/IP stack, Ethernet, Serial(RS232), other protocols</li>
+      <li>Associate level Cisco IOS, Mikrotik Router OS</li>
+      <li>LAN, WAN, Optical-fiber networks</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+      Databases
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>PostgreSQL, MySQL, CouchDB, MS SQL Server</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+      Virtualization<br/>Cloud
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>Docker</li>
+      <li>VMware ESX</li>
+      <li>Amazon Web Services, own small projects</li>
+      <li>Hosted systems, like Linode, etc</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+      Operating systems
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>Linux: Fedora OS, CentOS, Red Hat Enterprise, Debian, Ubuntu</li>
+      <li>Windows workstations and servers</li>
+      <li>MacOS</li>
+    </ul>
+  </div>
+
+  <div class="large-12 cell res-h text-center">
+    <h4>Professional experience</h4>
+  </div>
+
+  <div class="large-4 cell res-h">
+    <strong>Ruby Developer<br/>
+    Automation QA team</strong>
+  </div>
+  <div class="large-4 cell res-h">
+    <h5>Svitla Systems Inc.</h5>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>November 2012 - March 2014</strong>
+  </div>
+  <div class="large-2 cell">
+
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>
+Development of automated testing systems interacting with the payment terminals through different communication interfaces(RS232, Ethernet, internal communication protocols). Writing test cases, features and scenarios inside Cucumber environment by requirements of clients of Customer.
+      </li>
+      <li>
+Development of payment processing system emulator. Written in Lua. HTTPS server proxy to internal payment protocols, used in one chain with Cucumber test environment and payment terminals.
+      </li>
+      <li>
+Deployment tasks related to Ruby on Rails based payment system(Creating RPM packages for releases, configuring deployment scripts, etc...).
+      </li>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>IT department lead - Senior automated system engineer</strong><br/>
+    <strong>System administrator</strong><br/>
+    <strong>Networking engineer</strong><br/>
+  </div>
+  <div class="large-4 cell res-h">
+    <h5>UMS Logistics company</h5>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>November 2007 – July 2015</strong><br/>
+    <small>(Remote counseling, while worked in Svitla Systems,
+      goes back after dismissal from Svitla)</small>
+  </div>
+  <div class="large-2 cell res">
+    Main job responsibility
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>Development of IT infrastructure.</li>
+      <li>Managing IT integration processes.</li>
+      <li>Interaction with customers in part of IT.</li>
+      <li>System administration.</li>
+      <li>Software development and deployment.</li>
+      <li>Procurement of hardware, software, and IT services.</li>
+      <li>Participation in development of quality management system in part of change management and process validation by standardization according to ISO
+     9001 and 19 Key Elements(P&G).</li>
+      <li>Creation of operational procedures and instructions</li>
+      <li>Participation in the development of the company</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+    System integration
+  </div>
+  <div class="large-10 cell res">
+    <ul>Integration of Mantis Informatics SA Logistics Vision Suite III(Warehouse Management System, next WMS)
+      <li>Participation in development of warehouse processes according to WMS requirements</li>
+      <li>Picking/receiving/shipment algorithms</li>
+      <li>Stock location system</li>
+      <li>Products quality assurance system</li>
+      <li>Gate keeping</li>
+      <li>Radio-frequency data collection terminals user menus</li>
+      <li>Barcoding and programming printers</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+    Software development
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <strong>Ruby on Rails.</strong>The front-end that extends features of WMS and grants access to
+      information about stocks, produces documentation and reporting for Customers.
+      <li>Access to information about stocks of warehouses, lists of receipts and shipments of goods.</li>
+      <li>Stock counting reports.</li>
+      <li>Batch management.</li>
+      <li>Products quality controlling tools.</li>
+      <li>FIFO/LIFO picking algorithms.</li>
+      <li>Printed forms for reception, shipment, and transportation.</li>
+      <li>Transport management module.</li>
+      <li>Generating barcodes and labels for shipment units.</li>
+    </ul>
+    <ul>
+      <strong>Plain Ruby.</strong> Semi-automated tools to connect WMS with customers SAP ERP.
+      <li>Automated manipulations with products stocks of WMS in accordance to Customers orders received via email that includes attached XML documents</li>
+      <li>Receiving emails and parses attached XML document, then processes products stocks.</li>
+      <li>Management of QA statuses and Batch numbers of shipment units in accordance with QA rules of Customer.</li>
+      <li>Execution scheduled and delayed tasks.</li>
+      <li>Sends reports about assigning QA statuses and Batch numbers back to SAP.</li>
+      <li>Analyzes stocks of WMS and stocks received from SAP. Generates reports and sends to SAP. Reports include information about QA statuses, Batch numbers, stocks differences, etc...</li>
+    </ul>
+  </div>
+  <div class="large-2 cell res">
+    Systems administration
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>VMware ESX virtualization system management</li>
+      <li>SIP telephony</li>
+      <li>Asterisk FreePBX</li>
+      <li>Company servers and IT systems</li>
+      <li>Wide and local area networks</li>
+      <li>Coordinating mounting works</li>
+    </ul>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>IT remote Helpdesk specialist</strong>
+  </div>
+  <div class="large-4 cell res-h">
+    <h5>JSC Delta Bank</h5>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>March-April 2007</strong>
+  </div>
+  <div class="large-2 cell res">
+
+  </div>
+  <div class="large-10 cell res">
+    <ul>IT support of stuff by phone calls. Solving issues with hardware and software.
+      <li>IBM Lotus Notes and Domino.</li>
+      <li>Cellular networks.</li>
+      <li>Support in work with PC, software, and hardware.</li>
+    </ul>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>Junior system administrator</strong>
+  </div>
+  <div class="large-4 cell res-h">
+    <h5>Cerealia-Ukraine (Lantmannen-AXA)</h5>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>March-May 2006</strong>
+  </div>
+  <div class="large-2 cell res">
+
+  </div>
+  <div class="large-10 cell res">
+    <ul>
+      <li>Support of network, servers, Avaya PBX</li>
+      <li>Support of stuff in part of IT.</li>
+    </ul>
+  </div>
+  <div class="large-4 cell res-h">
+  </div>
+  <div class="large-4 cell res-h">
+    <h5>First different jobs</h5>
+  </div>
+  <div class="large-4 cell res-h">
+    <strong>before 2006</strong>
+  </div>
+  <div class="large-4 cell res-h">
+    Different jobs and tasks<br/>
+    Self-employed, small IT projects, starting own projects, self-learning
+  </div>
+  <div class="large-4 cell res-h">
+    <h4>Self-employed Experience</h4>
+  </div>
+  <div class="large-4 cell res-h">
+    April 2014 - Now
+  </div>
+  <div class="large-12 cell res">
+    <ul>
+      <li>Elixir-lang and Phoenix Framework</li>
+      <li>Developing CouchDB HTTP adapter for Elixir and Phoenix framework. Early alpha: https://github.com/sbezugliy/couchdb_auth</li>
+      <li>Started CouchDB and Elixir development blog: http://www.testenv.top/</li>
+      <li>Working on own projects, iterating work by queue</li>
+      <li>Started development of e-Commerce engine. Started using Ruby on Rails 5, now switched to Elixir, Phoenix, and CouchDB</li>
+      <li>The delivery tracking system, using Elixir, Phoenix, Google API.</li>
+      <li>Other projects using Ruby on Rails, Spree commerce engine, PHP \ Magento, etc..</li>
+      <li>Other jobs in IT and personal services</li>
+      <li>Looking for new opportunities</li>
+    </ul>
+  </div>
+  <div class="large-12 cell res-h text-center">
+    <h4>Education</h4>
+  </div>
+  <div class="large-2 cell res">
+  2006-2009
+  </div>
+  <div class="large-10 cell res">
+    Sevastopol State Technical University, Faculty of Automatics and Computer Engineering.
+    System engineering.
+  </div>
+  <div class="large-12 cell res-h text-center">
+    <h5>Additional education and training</h5>
+  </div>
+  <div class="large-2 cell res">
+
+  </div>
+  <div class="large-10 cell res">
+    2009 Bureau Veritas.
+    Quality management system standard ISO 9001.
+    Certificate of internal auditor ISO 9001:2008
+  </div>
+  <div class="large-2 cell res">
+    2009
+  </div>
+  <div class="large-10 cell res">
+    Bureau Veritas.<br/>
+    Quality management system standard ISO 9001.<br/>
+    Certificate of internal auditor ISO 9001:2008
+  </div>
+  <div class="large-2 cell res">
+    2010
+  </div>
+  <div class="large-10 cell res">
+   English courses. Intermediate
+  </div>
+  <div class="large-12 cell res-h text-center">
+    <h4>Languages</h4>
+  </div>
+  <div class="large-2 cell res">
+  </div>
+  <div class="large-10 cell res">
+  Native Russian<br/>
+  Fluent Ukrainian<br/>
+  Intermediate English<br/>
+  </div>
+  <div class="large-12 cell res-h text-center">
+    <h4>Personal qualities</h4>
+  </div>
+  <div class="large-2 cell res">
+  </div>
+  <div class="large-10 cell res">
+  Analytical mind, fast learning, good imaginary, able to understand how complex technological things work,
+  skills to self-learning, initiative, versatile, skills to find causes of problem, able to understand foreign code
+  </div>
+</div>

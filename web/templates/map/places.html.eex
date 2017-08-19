@@ -1,0 +1,71 @@
+
+<h2>Delivery route</h2>
+<div class="grid-x grid-margin-x">
+<div class="large-8 cell">
+    <label>Travel mode
+      <select id="travel-mode">
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="DRIVING">Driving</option>
+        <option value="TRANSIT">Transit</option>
+      </select>
+    </label>
+  </div>
+</div>
+<div class="grid-x grid-margin-x">
+  <div class="large-4 cell">
+    <label>Source location:
+      <input id="pac-input-src" type="text" placeholder="Enter a source location">
+    </label>
+  </div>
+  <div class="large-2 cell">
+    <label>Source point type
+      <select id="type-selector-src">
+        <option value="changetype-all">All</option>
+        <option value="changetype-establishment">Establishments</option>
+        <option value="changetype-address">Addresses</option>
+        <option value="changetype-geocode">Geocodes</option>
+      </select>
+    </label>
+  </div>
+  <div class="large-4 cell">
+    <label>Destination location:
+      <input id="pac-input-dst" type="text" placeholder="Enter a destination location">
+    </label>
+  </div>
+  <div class="large-2 cell">
+    <label>Destination point type
+      <select id="type-selector-dst">
+        <option value="changetype-all">All</option>
+        <option value="changetype-establishment">Establishments</option>
+        <option value="changetype-address">Addresses</option>
+        <option value="changetype-geocode">Geocodes</option>
+      </select>
+    </label>
+  </div>
+</div>
+</br>
+<div></div>
+<div class="grid-x grid-margin-x">
+  <div class="auto cell">
+    <div class="success callout" data-closable="slide-out-right">
+      <div id="google-map-notification"><p>Please select source and destination.</p></div>
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="grid-x grid-margin-x">
+  <div class="large-8 cell">
+    <div id="google-map"></div>
+  </div>
+  <div class="large-4 cell">
+    <div id="google-map-right-panel">
+      <p>Total Distance: <span id="total"></span></p>
+    </div>
+  </div>
+</div>
+<script>
+  prepScript("/js/gmap.js");
+</script>
