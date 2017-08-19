@@ -14,6 +14,6 @@ config :emporium, Emporium.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: Map.fetch!(System.get_env(), "PG_USERNAME"),
   password: Map.fetch!(System.get_env(), "PG_PASSWORD"),
-  database: Map.fetch!(System.get_env(), "PG_DATABASE"),
+  database: Map.fetch!(System.get_env(), "PG_DATABASE_TEST"),
   hostname: Map.fetch!(System.get_env(), "PG_HOSTNAME"),
   pool_size: 10
