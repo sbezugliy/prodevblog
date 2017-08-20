@@ -5,7 +5,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>DevElixir</title>
+  <title>PRODev</title>
   <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   <script>
     function prepScript(src) {

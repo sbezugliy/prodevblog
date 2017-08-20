@@ -5,7 +5,9 @@
 </div>
 
 <div class="off-canvas position-left" id="left-offcanvas-menu" data-off-canvas  data-transition="push">
-  <h1 class="text-center">DevElixir</h1>
+  <%= link(to: page_path(@conn, :index)) do %>
+    <h1 class="text-center">PRODev</h1>
+  <% end %>
   <ul class="submenu menu vertical">
     <%= if @current_user do %>
       <li>
@@ -19,7 +21,12 @@
       </li>
       <li>
         <%= link(to: page_path(@conn, :index)) do %>
-          <i class="fi-home large"></i> DevElixir
+          <i class="fi-home large"></i> PRODev
+        <% end %>
+      </li>
+      <li>
+        <%= link(to: page_path(@conn, :index)) do %>
+          <i class="fi-home large"></i> PRODev
         <% end %>
       </li>
       <li>
